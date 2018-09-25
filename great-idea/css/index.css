@@ -73,10 +73,8 @@ h1 {
 	font-size: 90px;
 }
 
-h1,
 h2 {
-	font-family: 'Spirax', cursive;
-	font-weight: bold;
+	font-size: 30px;
 }
 
 nav {
@@ -85,6 +83,10 @@ nav {
 	align-items: center;
 	margin: 20px;
 }
+
+/********************/
+/* CSS for homepage */
+/********************/
 
 header .header {
 	display: flex;
@@ -115,7 +117,6 @@ header .header .headerTitle button {
 }
 
 section {
-	width: 45%;
 	margin: 25px 0px;
 }
 
@@ -135,4 +136,51 @@ section p {
 .copyright {
 	text-align: center;
 	margin: 30px;
+}
+
+/*************************/
+/* CSS for services page */
+/*************************/
+
+.container .services {
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: space-between;
+}
+
+section.cube {
+	width: 49%;
+	border: 1px solid black;
+	background-color: lightGrey;
+	padding: 20px;
+}
+
+.services h3 {
+	font-size: 20px;
+}
+
+.services button {
+	padding: 5px 30px;
+	margin-top: 20px;
+}
+
+.container .facts {
+	display: flex;
+	margin-bottom: 60px;
+}
+
+.container .facts ul {
+	margin-top: 20px;
+}
+
+.container .facts ul li {
+		list-style-type: disc;
+		list-style-position: inside;
+		margin: 10px;
+		font-size: 20px;
+}
+
+.container .facts img {
+	margin-top: 20px;
 }
