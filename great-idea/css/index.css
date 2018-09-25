@@ -84,6 +84,15 @@ nav {
 	margin: 20px;
 }
 
+.container {
+	margin: 0 90px;
+}
+
+.copyright {
+	text-align: center;
+	margin: 30px;
+}
+
 /********************/
 /* CSS for homepage */
 /********************/
@@ -107,10 +116,6 @@ header .header .headerTitle button {
 	align-self: center;
 }
 
-.container {
-	margin: 0 90px;
-}
-
 .container .bigSec1 {
 	display: flex;
 	justify-content: space-between;
@@ -131,11 +136,6 @@ section p {
 .container .bigSec2 {
 	display: flex;
 	justify-content: space-between;
-}
-
-.copyright {
-	text-align: center;
-	margin: 30px;
 }
 
 /*************************/
@@ -183,4 +183,62 @@ section.cube {
 
 .container .facts img {
 	margin-top: 20px;
+}
+
+/*****************/
+/* Media queries */
+/*****************/
+
+/* Mobile Styles */
+@media (max-width: 650px) {
+
+	nav {
+		margin: 30px 5px;
+		flex-wrap: wrap;
+		height: 80px;
+	}
+
+	nav a {
+		margin: 0px 5px;
+	}
+	
+	.container {
+		margin: 0px 20px;
+	}
+
+	.container .services {
+		display: flex;
+		flex-direction: column;
+	}
+
+	section.cube {
+		width: 100%;
+		padding: 10px;
+	}
+
+	.container .facts {
+		flex-direction: column;
+	}
+
+	.facts img {
+		width: 80%;
+		align-self: center;
+	}
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 850px) {
+	
+	.container .facts {
+		flex-direction: column;
+	}
+	section.cube {
+		padding: 10px;
+		font-size: 10px;
+	}
+
+	.facts img {
+		width: 80%;
+		align-self: center;
+	}
 }
